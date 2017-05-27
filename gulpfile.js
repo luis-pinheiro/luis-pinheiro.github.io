@@ -29,7 +29,7 @@ gulp.task("sass", function() {
 				.pipe(rucksack())
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
-            cascade: false
+            cascade: true
         }))
 				.pipe(cssnano())
         .pipe(sourcemaps.write("."))
@@ -44,7 +44,7 @@ gulp.task("serve", ["html", "js", "sass"], function() {
         }
     });
     gulp.watch("src/scss/*.scss", ["sass"]);
-    gulp.watch("src/js/*.js", ["js"]);
+    gulp.watch("src/js/*.js", ["js"]).on("change", browserSync.reload);
     return gulp.watch("src/index.html", ["html"]);
     // return gulp.watch("src/index.html").on("change", browserSync.reload);
 });

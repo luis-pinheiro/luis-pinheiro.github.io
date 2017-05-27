@@ -1,3 +1,5 @@
+@import './t-scroll/_include.scss';
+
 html,
 body,
 .view {
@@ -6,6 +8,26 @@ body,
 
 #home {
     color: #fff;
+    h1.title{
+        font-size: responsive 22px 80px;
+        font-range: 260px 1280px;
+        font-weight: 300;
+        color: #fff;
+    }
+    
+    .title_2{
+        
+            font-size: responsive 15px 30px;
+        font-range: 260px 1280px;
+        color: #fff;
+        
+    }
+    .social{
+        a{
+            font-size: responsive 24px 40px;
+        font-range: 260px 1280px;
+        }
+    }
 }
 
 
@@ -47,7 +69,7 @@ footer.page-footer {
     background-size: cover;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
     a {
-        font-size: 30px;
+        // font-size: 30px;
         color: #fff;
         margin: 15px;
     }
@@ -73,7 +95,7 @@ footer.page-footer {
 
 #portfolio {
     img {
-        transition: .3s;
+        transition: all 200ms ease-in-out-back;
         &:hover {
             box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
         }
@@ -86,3 +108,19 @@ footer.page-footer {
 .mx-auto {
     display: block !important;
 }
+//
+// .t_default {
+//     opacity: 1;
+//     animation-direction: normal;
+//     animation-iteration-count: 1;
+//     animation-timing-function: ease;
+//     animation-duration: 0.5s;
+//     animation-delay: 0s;
+//     position: relative;
+// }
+// .t_infinite {
+//     animation-iteration-count: infinite;
+// }
+// .t_animated {
+//     opacity: 0;
+// }
