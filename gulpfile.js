@@ -16,7 +16,7 @@ gulp.task("html", function() {
 	return gulp
 		.src("src/index.html")
 		.pipe(htmlbeautify(options))
-		.pipe(gulp.dest("dist"))
+		.pipe(gulp.dest("."))
 		.pipe(browserSync.stream());
 });
 
