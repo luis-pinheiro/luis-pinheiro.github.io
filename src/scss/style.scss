@@ -1,4 +1,10 @@
 @import './t-scroll/_include.scss';
+@import '../font/icomoon/style.scss';
+.tropa {
+    background-image: 'dist/img/wlCwBr5FkN.svg';
+    width: 50px !important;
+    height: 50px !important;
+}
 
 html,
 body,
@@ -8,26 +14,51 @@ body,
 
 #home {
     color: #fff;
-    h1.title{
-        font-size: responsive 22px 80px;
-        font-range: 260px 1280px;
-        font-weight: 300;
-        color: #fff;
-    }
-    
-    .title_2{
-        
-            font-size: responsive 15px 30px;
-        font-range: 260px 1280px;
-        color: #fff;
-        
-    }
-    .social{
-        a{
-            font-size: responsive 24px 40px;
-        font-range: 260px 1280px;
+    .hm-black-strong .full-bg-img,
+    .hm-black-strong .mask {
+        background-color: rgba(0, 0, 0, .5) !important;
+        height: 100%;
+        #header {
+            // height: 80%;
+            // padding-top: 10%;
+            .row{
+              // height: 100%;
+              display: flex;
+              justify-content: space-around;
+              .col{
+                display: block;
+                height: 30%;
+                margin: auto;
+                text-align: center;
+                align-items: center;
+              }
+              ul {
+                  display: flex;
+                  margin: 0px auto;
+                  h1.title {
+                      font-size: responsive 22px 80px;
+                      font-range: 260px 1280px;
+                      font-weight: 300;
+                      color: #fff;
+                  }
+                  .title_2 {
+                      font-size: responsive 15px 30px;
+                      font-range: 260px 1280px;
+                      color: #fff;
+                      margin-bottom: 5%;
+                  }
+                  .social {
+                      a {
+                          font-size: responsive 24px 40px;
+                          font-range: 260px 1280px;
+                      }
+                  }
+              }
+            }
+
         }
     }
+
 }
 
 
@@ -37,6 +68,7 @@ body,
     background-color: transparent;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
     .navbar-rigth {
+      background-color: #3c4f74;
         margin-left: auto;
         li.nav-item {
             text-align: center;
@@ -75,10 +107,7 @@ footer.page-footer {
     }
 }
 
-.hm-black-strong .full-bg-img,
-.hm-black-strong .mask {
-    background-color: rgba(0, 0, 0, .5) !important;
-}
+
 
 #about {
     ul {
@@ -108,6 +137,7 @@ footer.page-footer {
 .mx-auto {
     display: block !important;
 }
+
 //
 // .t_default {
 //     opacity: 1;

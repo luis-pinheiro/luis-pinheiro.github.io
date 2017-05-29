@@ -44,16 +44,15 @@ gulp.task("sass", function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task("serve", ["html", "js", "sass"], function() {
+gulp.task("serve", ["html", "js", "sass", 'img'], function() {
     browserSync.init({
         server: {
-            baseDir: "./dist"
+            baseDir: "."
         }
     });
     gulp.watch("src/scss/*.scss", ["sass"]);
     gulp.watch("src/js/*.js", ["js"]).on("change", browserSync.reload);
-    return gulp.watch("src/index.html", ["html"]);
-    // return gulp.watch("src/index.html").on("change", browserSync.reload);
+    return gulp.watch("./index.html").on("change", browserSync.reload);
 });
 
 gulp.task("js", function() {

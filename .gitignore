@@ -1,3 +1,6 @@
 /node_modules
 /_git_portfolio.rar
 *.map
+./portfolio.sublime-project
+./portfolio.sublime-workspace
+./index.old.html

@@ -1,0 +1,58 @@
+html, body, .view {
+  height: 100%; }
+
+#home {
+  color: #fff; }
+
+/* Navigation*/
+.navbar {
+  background-color: transparent;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+  .navbar .navbar-rigth {
+    margin-left: auto; }
+
+.scrolling-navbar {
+  transition: background .5s ease-in-out, padding .5s ease-in-out; }
+
+.top-nav-collapse {
+  background-color: #3c4f74; }
+
+footer.page-footer {
+  background-color: #3c4f74;
+  margin-top: 2rem;
+  padding-top: 0px !important; }
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1c2331; } }
+
+.view {
+  background: url("https://s18.postimg.org/lctx0vzxl/header-2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); }
+  .view a {
+    font-size: 30px;
+    color: #fff;
+    margin: 15px; }
+
+.hm-black-strong .full-bg-img, .hm-black-strong .mask {
+  background-color: rgba(0, 0, 0, 0.5) !important; }
+
+#about ul li {
+  float: left;
+  margin: 7px;
+  list-style: none; }
+
+#about img {
+  width: 150px; }
+
+#portfolio img {
+  transition: .3s; }
+  #portfolio img:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+
+/* Global*/
+.mx-auto {
+  display: block !important; }
+
+/*# sourceMappingURL=style.css.map */

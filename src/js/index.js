@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  $('.nav-link').click(function() {
+    $('#navbarNav1').removeClass('show');
+  });
     Tu.t_scroll({
         't_element': ".title .slideDown",
         't_duration': 0.1,
