@@ -8,7 +8,6 @@ var jsmin = require('gulp-jsmin');
 var cssnano = require('gulp-cssnano');
 var rucksack = require('gulp-rucksack');
 var htmlbeautify = require('gulp-html-beautify');
-var imagemin = require('gulp-imagemin');
 
 gulp.task("html", function() {
 	var options = {
@@ -19,12 +18,6 @@ gulp.task("html", function() {
 		.pipe(htmlbeautify(options))
 		.pipe(gulp.dest("."))
 		.pipe(browserSync.stream());
-});
-
-gulp.task('img', function() {
-	 gulp.src('src/img/**.*')
-		.pipe(imagemin())
-		.pipe(gulp.dest('dist/img'));
 });
 
 gulp.task("sass", function() {
