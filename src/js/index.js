@@ -9,19 +9,19 @@ $(document).ready(function() {
         't_function': 'ease-in'
     });
     Tu.t_scroll({
-        't_element': '.title_2 .slideDown',
+        't_element': '.lead .slideDown',
         't_duration': 1,
         't_delay': 2,
         't_function': 'ease-in'
     })
     Tu.t_scroll({
-        't_element': '.title_2 .slideRight',
+        't_element': '.lead .slideRight',
         't_duration': 1,
         't_delay': 2,
         't_function': 'ease-in'
     })
     Tu.t_scroll({
-        't_element': '.title_2 .slideLeft',
+        't_element': '.lead .slideLeft',
         't_duration': 1,
         't_delay': 2,
         't_function': 'ease-in'
