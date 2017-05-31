@@ -1,9 +1,14 @@
 @import './t-scroll/_include.scss';
 @import '../font/icomoon/style.scss';
-.tropa {
-    background-image: 'dist/img/wlCwBr5FkN.svg';
-    width: 50px !important;
-    height: 50px !important;
+// .tropa {
+//     background-image: 'dist/img/wlCwBr5FkN.svg';
+//     width: 50px !important;
+//     height: 50px !important;
+// }
+
+
+body{
+    // text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
 html,
@@ -12,63 +17,49 @@ body,
     height: 100%;
 }
 
-#home {
-    color: #fff;
-    .hm-black-strong .full-bg-img,
-    .hm-black-strong .mask {
-        background-color: rgba(0, 0, 0, .5) !important;
+#header {
+    background-image: url('../img/header-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100% !important;
+    min-height: 100% !important;
+    .bck {
+        background-color: rgba(0, 0, 0, .2);
         height: 100%;
-        #header {
-            // height: 80%;
-            // padding-top: 10%;
-            .row{
-              // height: 100%;
-              display: flex;
-              justify-content: space-around;
-              .col{
-                display: block;
-                height: 30%;
-                margin: auto;
-                text-align: center;
-                align-items: center;
-              }
-              ul {
-                  display: flex;
-                  margin: 0px auto;
-                  h1.title {
-                      font-size: responsive 22px 80px;
-                      font-range: 260px 1280px;
-                      font-weight: 300;
-                      color: #fff;
-                  }
-                  .title_2 {
-                      font-size: responsive 15px 30px;
-                      font-range: 260px 1280px;
-                      color: #fff;
-                      margin-bottom: 5%;
-                  }
-                  .social {
-                      a {
-                          font-size: responsive 24px 40px;
-                          font-range: 260px 1280px;
-                      }
-                  }
-              }
+        .container {
+            height: 80% !important;
+            .jumbotron {
+                box-shadow: 0px 0px 0px !important;
+                background-color: transparent !important;
+                padding-top: 19%;
+                a{
+                    font-size: 25px;
+                }
+                p,
+                a,
+                h1 {
+                    text-align: center;
+                    color: #fff;
+                    display: flow-root;
+                    text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+                }
+                hr {
+                    border-top: 1px solid rgba(255, 255, 255, .7) !important;
+                }
             }
-
         }
     }
-
 }
 
 
 /* Navigation*/
 
 .navbar {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, .1);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
     .navbar-rigth {
-      background-color: #3c4f74;
+        // background-color: #3c4f74;
         margin-left: auto;
         li.nav-item {
             text-align: center;
@@ -90,9 +81,16 @@ footer.page-footer {
     padding-top: 0px !important;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 990px) {
     .navbar {
         background-color: #1c2331;
+        .navbar-rigth {
+            background-color: #3c4f74;
+            margin-left: auto;
+            li.nav-item {
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -106,8 +104,6 @@ footer.page-footer {
         margin: 15px;
     }
 }
-
-
 
 #about {
     ul {
@@ -137,20 +133,3 @@ footer.page-footer {
 .mx-auto {
     display: block !important;
 }
-
-//
-// .t_default {
-//     opacity: 1;
-//     animation-direction: normal;
-//     animation-iteration-count: 1;
-//     animation-timing-function: ease;
-//     animation-duration: 0.5s;
-//     animation-delay: 0s;
-//     position: relative;
-// }
-// .t_infinite {
-//     animation-iteration-count: infinite;
-// }
-// .t_animated {
-//     opacity: 0;
-// }

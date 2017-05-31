@@ -8,6 +8,13 @@ var jsmin = require('gulp-jsmin');
 var cssnano = require('gulp-cssnano');
 var rucksack = require('gulp-rucksack');
 var htmlbeautify = require('gulp-html-beautify');
+var imagemin = require('gulp-imagemin');
+
+gulp.task('img', function () {
+	return gulp.src('./src/img/**.*')
+	.pipe(imagemin())
+	.pipe(gulp.dest('./dist/img'));
+});
 
 gulp.task("html", function() {
 	var options = {

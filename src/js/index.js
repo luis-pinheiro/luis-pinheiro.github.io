@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('#navbarNav1').removeClass('show');
   });
     Tu.t_scroll({
-        't_element': ".display-3 .slideDown",
+        't_element': ".display-1 .slideDown",
         't_duration': 0.1,
         't_delay': 0.5,
         't_function': 'ease-in'
