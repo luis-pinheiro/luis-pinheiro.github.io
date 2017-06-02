@@ -1,7 +1,10 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/mdbootstrap/sass/mdb.scss';
 @import 'scrolling-nav.scss';
 @import 't-scroll/_include.scss';
 @import '../font/icomoon/style.scss';
+
+
 // Small devices (landscape phones, 576px and up)
 // @media (min-width: 576px) { ... }
 // Medium devices (tablets, 768px and up)
