@@ -55,7 +55,7 @@ gulp.task("serve", ["html", "js", "sass", 'img'], function() {
     });
     gulp.watch("src/scss/*.scss", ["sass"]);
     gulp.watch("src/js/*.js", ["js"]).on("change", browserSync.reload);
-    return gulp.watch("./index.html").on("change", browserSync.reload);
+    return gulp.watch("./*.html").on("change", browserSync.reload);
 });
 
 gulp.task("js", function() {
