@@ -1,28 +1,12 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../../node_modules/mdbootstrap/sass/mdb.scss';
 @import 'scrolling-nav.scss';
-@import 't-scroll/_include.scss';
 @import '../font/icomoon/style.scss';
-
-
-// Small devices (landscape phones, 576px and up)
-// @media (min-width: 576px) { ... }
-// Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) { ... }
-// Large devices (desktops, 992px and up)
-// @media (min-width: 992px) { ... }
-// Extra large devices (large desktops, 1200px and up)
-// @media (min-width: 1200px) { ... }
-body {
-    // text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
-}
-
 html,
 body,
 .view {
     height: 100%;
 }
-
 #header {
     background-image: url('../img/header-2.jpg');
     background-position: center;
@@ -39,9 +23,6 @@ body,
                 box-shadow: 0px 0px 0px !important;
                 background-color: transparent !important;
                 padding-top: 19%;
-                // @media (min-width: 320px) {
-                //     padding-top: 45%;
-                // }
                 @include media-breakpoint-only(xs) {
                   padding-top: 45%;
                }
@@ -76,36 +57,27 @@ body,
         }
     }
 }
-
-
 /* Navigation*/
-
 .navbar {
-    // background-color: rgba(0, 0, 0, .1);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
     .navbar-rigth {
-        // background-color: #3c4f74;
         margin-left: auto;
         li.nav-item {
             text-align: center;
         }
     }
 }
-
 .scrolling-navbar {
     transition: background .5s ease-in-out, padding .5s ease-in-out;
 }
-
 .top-nav-collapse {
     background-color: #3c4f74;
 }
-
 footer.page-footer {
     background-color: #3c4f74;
     margin-top: 2rem;
     padding-top: 0px !important;
 }
-
 @media only screen and (max-width: 990px) {
     .navbar {
         // background-color: #1c2331;
@@ -119,18 +91,15 @@ footer.page-footer {
         }
     }
 }
-
 .view {
     background: url("https://s18.postimg.org/lctx0vzxl/header-2.jpg")no-repeat center center fixed;
     background-size: cover;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
     a {
-        // font-size: 30px;
         color: #fff;
         margin: 15px;
     }
 }
-
 #about {
     ul {
         li {
@@ -168,7 +137,6 @@ footer.page-footer {
     margin: 15px;
   }
 }
-
 #portfolio {
     img {
         transition: all 200ms ease-in-out-back;
@@ -177,10 +145,7 @@ footer.page-footer {
         }
     }
 }
-
-
 /* Global*/
-
 .mx-auto {
     display: block !important;
 }
