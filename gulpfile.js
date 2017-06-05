@@ -32,16 +32,13 @@ gulp.task("sass", function() {
         .src("src/scss/style.scss")
         .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(cssmin())
-        .pipe(rucksack({
-            clearFix: false,
-            fallbacks: true
-        }))
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: true
-        }))
-        .pipe(cssnano())
+        // .pipe(cssmin())
+        .pipe(rucksack())
+        // .pipe(autoprefixer({
+        //     browsers: ['last 2 versions'],
+        //     cascade: true
+        // }))
+        // .pipe(cssnano())
         .pipe(sourcemaps.write("."))
         .pipe(gulp.dest("./dist/css"))
         .pipe(browserSync.stream());
@@ -53,7 +50,7 @@ gulp.task("serve", ["html", "js", "sass", 'img'], function() {
             baseDir: "."
         }
     });
-    gulp.watch("src/scss/*.scss", ["sass"]);
+    gulp.watch("src/scss/**/*.scss", ["sass"]);
     gulp.watch("src/js/*.js", ["js"]).on("change", browserSync.reload);
     return gulp.watch("./*.html").on("change", browserSync.reload);
 });
@@ -64,4 +61,6 @@ gulp.task("js", function() {
         .pipe(gulp.dest("dist/js"));
 });
 
-gulp.task("default", ["serve"]);
+gulp.task('del', require('del').bind(null, ['dist']));
+
+gulp.task("default", ['del', "serve"]);

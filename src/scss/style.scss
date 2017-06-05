@@ -2,12 +2,11 @@ $enable-flex:               true !default;
 $enable-shadows:            true !default;
 $enable-gradients:          true !default;
 $enable-hover-media-query:  true !default;
-@import '../../node_modules/font-awesome/scss/font-awesome.scss';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../../node_modules/mdbootstrap/sass/mdb.scss';
 @import 'scrolling-nav.scss';
-@import '../font/icomoon/style.scss';
 @import './resume.scss';
+@import '../font/icons/styles.scss';
 
 html,
 body,
