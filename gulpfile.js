@@ -9,6 +9,7 @@ var cssnano = require('gulp-cssnano');
 var rucksack = require('gulp-rucksack');
 var htmlbeautify = require('gulp-html-beautify');
 var imagemin = require('gulp-imagemin');
+var runSequence = require('run-sequence');
 
 gulp.task('img', function() {
     return gulp.src('./src/img/**.*')
@@ -75,4 +76,6 @@ gulp.task('copy-icomoon', function() {
 
 gulp.task('del', require('del').bind(null, ['dist']));
 
-gulp.task("default", ['del', "serve"]);
+gulp.task("default", function() {
+    runSequence('del', 'serve');
+});
