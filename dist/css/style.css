@@ -13200,14 +13200,13 @@ html {
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
 #resume {
-  background-color: #90a4ae;
-  padding: 30px; }
-  #resume nav {
-    background-color: #3c4f74; }
-  #resume .container {
-    background-color: #e0e0e0; }
-    #resume .container .row {
-      padding: 15px; }
+  background-color: #697083; }
+  #resume .head .blockquote {
+    border-left-color: #5592c9; }
+    #resume .head .blockquote .card-subtitle {
+      color: #5592c9 !important; }
+  #resume .blockquote {
+    border-left-color: #697083; }
 
 @font-face {
   font-family: 'icomoon';

@@ -1,16 +1,21 @@
+$rs_blue: #5592c9;
+$rs_grey: #697083;
+$rs_text_dark: #374458;
+
+
 #resume {
-    background-color: #90a4ae;
-    padding: 30px;
-    nav {
-        background-color: #3c4f74;
+    // color: $rs_text_dark;
+    background-color: $rs_grey;
+    .head{
+    	.blockquote{
+    		border-left-color: $rs_blue;
+    		.card-subtitle{
+    			color: $rs_blue !important;
+    		}
+    	}
     }
-    .container {
-        background-color: #e0e0e0;
-        .row {
-            padding: 15px;
-            .card {
-                // margin: 15px 0px;
-            }
-        }
+    .blockquote{
+    	border-left-color: $rs_grey;
     }
-}
+
+   }
