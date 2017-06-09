@@ -1,21 +1,12 @@
 $rs_blue: #5592c9;
 $rs_grey: #697083;
 $rs_text_dark: #374458;
-
+$rs_ligth_grey: #fafafa;
+// Global
+.blue_text {
+    color: $rs_blue !important;
+}
 
 #resume {
-    // color: $rs_text_dark;
-    background-color: $rs_grey;
-    .head{
-    	.blockquote{
-    		border-left-color: $rs_blue;
-    		.card-subtitle{
-    			color: $rs_blue !important;
-    		}
-    	}
-    }
-    .blockquote{
-    	border-left-color: $rs_grey;
-    }
-
-   }
+  text-align: center;
+}

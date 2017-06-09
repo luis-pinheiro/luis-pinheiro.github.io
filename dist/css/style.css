@@ -13199,14 +13199,11 @@ html {
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
+.blue_text {
+  color: #5592c9 !important; }
+
 #resume {
-  background-color: #697083; }
-  #resume .head .blockquote {
-    border-left-color: #5592c9; }
-    #resume .head .blockquote .card-subtitle {
-      color: #5592c9 !important; }
-  #resume .blockquote {
-    border-left-color: #697083; }
+  text-align: center; }
 
 @font-face {
   font-family: 'icomoon';
