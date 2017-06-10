@@ -1,12 +1,22 @@
 $rs_blue: #5592c9;
 $rs_grey: #697083;
 $rs_text_dark: #374458;
-$rs_ligth_grey: #fafafa;
-// Global
+$rs_ligth_grey: #fafafa; // Global
+
 .blue_text {
     color: $rs_blue !important;
 }
 
 #resume {
-  text-align: center;
+    text-align: center;
+
+    p {
+        margin-bottom: 0 !important;
+    }
+
+    #head {
+        h1 {
+            margin-top: 15px;
+        }
+    }
 }

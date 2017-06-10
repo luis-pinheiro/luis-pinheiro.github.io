@@ -13204,6 +13204,10 @@ of those sections to manage the look and feel of the site. */
 
 #resume {
   text-align: center; }
+  #resume p {
+    margin-bottom: 0 !important; }
+  #resume #head h1 {
+    margin-top: 15px; }
 
 @font-face {
   font-family: 'icomoon';
