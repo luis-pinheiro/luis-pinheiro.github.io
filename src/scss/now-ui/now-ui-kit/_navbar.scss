@@ -1,7 +1,7 @@
 .navbar {
     // padding-top: $navbar-padding-base;
     // padding-bottom: $navbar-padding-base;
-    min-height: 53px;
+    // min-height: 53px;
     // margin-bottom: 20px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
 
@@ -27,11 +27,10 @@
         }
 
         .nav-link {
-            text-transform: uppercase;
-            font-size     : $font-size-mini;
+            // text-transform: uppercase;
+            // font-size     : $font-size-mini;
             // padding       : $padding-base-vertical $padding-base-horizontal;
-            line-height   : $line-height-nav-link;
-
+            // line-height   : $line-height-nav-link;
             i.fa + p,
             i.now-ui-icons + p {
                 margin-left: 5px;
@@ -83,11 +82,11 @@
     }
 
     .navbar-brand {
-        text-transform: uppercase;
-        font-size     : $font-size-small;
+        // text-transform: uppercase;
+        // font-size     : $font-size-small;
         // padding-top   : $padding-base-vertical;
         // padding-bottom: $padding-base-vertical;
-        line-height   : $line-height-nav-link;
+        // line-height   : $line-height-nav-link;
     }
 
     .navbar-toggler {

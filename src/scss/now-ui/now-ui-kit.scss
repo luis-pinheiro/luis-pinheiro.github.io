@@ -20,7 +20,7 @@
 @import "now-ui-kit/plugins/plugin-bootstrap-switch";
 @import "now-ui-kit/plugins/plugin-nouislider";
 @import "now-ui-kit/plugins/plugin-datepicker"; // Core CSS
-// @import "now-ui-kit/buttons";
+@import "now-ui-kit/buttons";
 @import "now-ui-kit/inputs";
 @import "now-ui-kit/checkboxes-radio";
 @import "now-ui-kit/progress";
@@ -30,7 +30,8 @@
 @import "now-ui-kit/misc";
 @import "now-ui-kit/pills"; // components
 @import "now-ui-kit/social-buttons";
-@import "now-ui-kit/tabs"; // @import "now-ui-kit/navbar";
+@import "now-ui-kit/tabs";
+@import "now-ui-kit/navbar";
 @import "now-ui-kit/dropdown";
 @import "now-ui-kit/alerts";
 @import "now-ui-kit/images";
