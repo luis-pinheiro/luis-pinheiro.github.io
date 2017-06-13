@@ -1,65 +1,80 @@
-$enable-flex:               true !default;
-$enable-shadows:            true !default;
-$enable-gradients:          true !default;
-$enable-hover-media-query:  true !default;
+$enable-flex: true !default;
+$enable-shadows: true !default;
+$enable-gradients: true !default;
+$enable-hover-media-query: true !default;
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
-@import '../../node_modules/mdbootstrap/sass/mdb.scss';
-@import 'scrolling-nav.scss';
+@import '../../node_modules/mdbootstrap/sass/mdb.scss'; // @import '../../node_modules/t-scroll/sass/t-scroll.min.scss';
+@import './scrolling-nav.scss';
+@import '../font/icons/style.scss';
 @import './resume.scss';
 @import '../font/icons/styles.scss';
 
-html,
+.view,
 body,
-.view {
+html {
     height: 100%;
 }
+
+body {
+    padding: 0 !important;
+}
+
 #header {
-    background-image: url('../img/header-2.jpg');
+    background-image   : url('../img/header-2.jpg');
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100% !important;
-    min-height: 100% !important;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    height             : 100% !important;
+    min-height         : 100% !important;
+
     .bck {
         background-color: rgba(0, 0, 0, .2);
-        height: 100%;
+        height          : 100%;
+
         .container {
             height: 80% !important;
+
             .jumbotron {
-                box-shadow: 0px 0px 0px !important;
+                box-shadow      : 0 0 0 !important;
                 background-color: transparent !important;
-                padding-top: 19%;
+                padding-top     : 19%;
                 @include media-breakpoint-only(xs) {
-                  padding-top: 45%;
-               }
-                @include media-breakpoint-only(sm) {  }
-                @include media-breakpoint-only(md) {  }
-                @include media-breakpoint-only(lg) {  }
-                @include media-breakpoint-only(xl) {  }
+                    padding-top: 45%;
+                }
+                @include media-breakpoint-only(sm) {}
+                @include media-breakpoint-only(md) {}
+                @include media-breakpoint-only(lg) {}
+                @include media-breakpoint-only(xl) {}
+
                 a {
-                    font-size: responsive 16px 25px;
+                    font-size : responsive 16px 25px;
                     font-range: 320px 1280px;
                     transition: all 200ms ease-in-back;
-                    &:hover{
+
+                    &:hover {
                         transform: scale(1.5);
                     }
                 }
+
                 h1 {
-                    font-size: responsive 22px 90px;
+                    font-size : responsive 22px 90px;
                     font-range: 320px 1280px;
                 }
+
                 p {
-                    font-size: responsive 12px 22px;
+                    font-size : responsive 12px 22px;
                     font-range: 320px 1280px;
                 }
-                p,
+
                 a,
-                h1 {
-                    text-align: center;
-                    color: #fff;
-                    display: flow-root;
+                h1,
+                p {
+                    text-align : center;
+                    color      : #fff;
+                    display    : flow-root;
                     text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
                 }
+
                 hr {
                     border-top: 1px solid rgba(255, 255, 255, .7) !important;
                 }
@@ -70,31 +85,38 @@ body,
 /* Navigation*/
 .navbar {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+
     .navbar-rigth {
         margin-left: auto;
+
         li.nav-item {
             text-align: center;
         }
     }
 }
+
 .scrolling-navbar {
-    transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
 }
+
 .top-nav-collapse {
     background-color: #3c4f74;
 }
+
 footer.page-footer {
     background-color: #3c4f74;
-    margin-top: 2rem;
-    padding-top: 0px !important;
+    margin-top      : 2rem;
+    padding-top     : 0 !important;
 }
 @media only screen and (max-width: 990px) {
     .navbar {
         // background-color: #1c2331;
         background-color: #3c4f74;
+
         .navbar-rigth {
             background-color: #3c4f74;
-            margin-left: auto;
+            margin-left     : auto;
+
             li.nav-item {
                 text-align: center;
             }
@@ -105,43 +127,50 @@ footer.page-footer {
 #about {
     ul {
         li {
-            float: left;
-            margin: 7px;
+            float     : left;
+            margin    : 7px;
             list-style: none;
         }
     }
+
     img {
         width: 150px;
     }
+
     .progress {
-      display: -ms-flexbox;
-      display: flex;
-      font-size: 12px;
-      font-size: .75rem;
-      line-height: 16px;
-      line-height: 1rem;
-      text-align: center;
-      background-color: rgba(2, 117, 216, 0.23);
-      border-radius: .25rem;
-  }
-  hr {
-    box-sizing: content-box;
-    height: 0;
-    margin-top: 16px;
-    margin-top: 1rem;
-    border: 0;
-    border-top: 1px solid rgb(34, 42, 120);
-  }
-  .badge{
-    margin: 7px;
-  }
-  h5{
-    margin: 15px;
-  }
+        display         : -ms-flexbox;
+        display         : flex;
+        font-size       : 12px;
+        font-size       : 0.75rem;
+        line-height     : 16px;
+        line-height     : 1rem;
+        text-align      : center;
+        background-color: rgba(2, 117, 216, 0.23);
+        border-radius   : 0.25rem;
+    }
+
+    hr {
+        box-sizing: content-box;
+        height    : 0;
+        margin-top: 16px;
+        margin-top: 1rem;
+        border    : 0;
+        border-top: 1px solid rgb(34, 42, 120);
+    }
+
+    .badge {
+        margin: 7px;
+    }
+
+    h5 {
+        margin: 15px;
+    }
 }
+
 #portfolio {
     img {
         transition: all 200ms ease-in-out-back;
+
         &:hover {
             opacity: 0.75;
             @extend .z-depth-2;

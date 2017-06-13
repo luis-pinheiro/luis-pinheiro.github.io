@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ucxscb');
-  src:  url('fonts/icomoon.eot?ucxscb#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ucxscb') format('truetype'),
-    url('fonts/icomoon.woff?ucxscb') format('woff'),
-    url('fonts/icomoon.svg?ucxscb#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?7bjx6o');
+  src:  url('fonts/icomoon.eot?7bjx6o#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?7bjx6o') format('truetype'),
+    url('fonts/icomoon.woff?7bjx6o') format('woff'),
+    url('fonts/icomoon.svg?7bjx6o#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,13 +24,211 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-glass:before {
+  content: "\f000";
+}
+.icon-music:before {
+  content: "\f001";
+}
 .icon-envelope-o:before {
-  content: "\f003";
+  content: "\f004";
+}
+.icon-heart:before {
+  content: "\f005";
+}
+.icon-user:before {
+  content: "\f007";
 }
 .icon-check:before {
-  content: "\f00c";
+  content: "\f00d";
 }
 .icon-home:before {
+  content: "\f016";
+}
+.icon-bookmark:before {
+  content: "\f02e";
+}
+.icon-edit:before {
+  content: "\f044";
+}
+.icon-pencil-square-o:before {
+  content: "\f044";
+}
+.icon-check-square-o:before {
+  content: "\f046";
+}
+.icon-calendar:before {
+  content: "\f073";
+}
+.icon-comment:before {
+  content: "\f075";
+}
+.icon-folder:before {
+  content: "\f07b";
+}
+.icon-phone-square:before {
+  content: "\f098";
+}
+.icon-briefcase:before {
+  content: "\f0b1";
+}
+.icon-group:before {
+  content: "\f0c0";
+}
+.icon-users:before {
+  content: "\f0c0";
+}
+.icon-clipboard:before {
+  content: "\f0ea";
+}
+.icon-paste:before {
+  content: "\f0ea";
+}
+.icon-lightbulb-o:before {
+  content: "\f0eb";
+}
+.icon-suitcase:before {
+  content: "\f0f2";
+}
+.icon-laptop:before {
+  content: "\f109";
+}
+.icon-tablet:before {
+  content: "\f10a";
+}
+.icon-mobile:before {
+  content: "\f10b";
+}
+.icon-mobile-phone:before {
+  content: "\f10b";
+}
+.icon-gamepad:before {
+  content: "\f11b";
+}
+.icon-flag-o:before {
+  content: "\f11d";
+}
+.icon-location-arrow:before {
+  content: "\f124";
+}
+.icon-info:before {
+  content: "\f129";
+}
+.icon-rocket:before {
+  content: "\f135";
+}
+.icon-eur:before {
+  content: "\f153";
+}
+.icon-euro:before {
+  content: "\f153";
+}
+.icon-thumbs-up:before {
+  content: "\f164";
+}
+.icon-bitbucket:before {
+  content: "\f171";
+}
+.icon-bitbucket-square:before {
+  content: "\f172";
+}
+.icon-windows:before {
+  content: "\f17a";
+}
+.icon-linux:before {
+  content: "\f17c";
+}
+.icon-trello:before {
+  content: "\f181";
+}
+.icon-wordpress:before {
+  content: "\f19b";
+}
+.icon-joomla:before {
+  content: "\f1ab";
+}
+.icon-database:before {
+  content: "\f1c0";
+}
+.icon-git-square:before {
+  content: "\f1d2";
+}
+.icon-paper-plane-o:before {
+  content: "\f1d9";
+}
+.icon-send-o:before {
+  content: "\f1d9";
+}
+.icon-paint-brush:before {
+  content: "\f1fc";
+}
+.icon-facebook-official:before {
+  content: "\f230";
+}
+.icon-whatsapp:before {
+  content: "\f232";
+}
+.icon-mouse-pointer:before {
+  content: "\f245";
+}
+.icon-hand-peace-o:before {
+  content: "\f25b";
+}
+.icon-chrome:before {
+  content: "\f268";
+}
+.icon-firefox:before {
+  content: "\f269";
+}
+.icon-calendar-check-o:before {
+  content: "\f274";
+}
+.icon-handshake-o:before {
+  content: "\f2b5";
+}
+.icon-address-card:before {
+  content: "\f2bb";
+}
+.icon-vcard:before {
+  content: "\f2bb";
+}
+.icon-address-card-o:before {
+  content: "\f2bc";
+}
+.icon-vcard-o:before {
+  content: "\f2bc";
+}
+.icon-user-circle2:before {
+  content: "\f2be";
+}
+.icon-user-circle-o:before {
+  content: "\f2bf";
+}
+.icon-user-o:before {
+  content: "\f2c0";
+}
+.icon-drivers-license:before {
+  content: "\f2c2";
+}
+.icon-id-card:before {
+  content: "\f2c2";
+}
+.icon-drivers-license-o:before {
+  content: "\f2c3";
+}
+.icon-id-card-o:before {
+  content: "\f2c3";
+}
+.icon-telegram:before {
+  content: "\f2c6";
+}
+.icon-envelope-o2:before {
+  content: "\f003";
+}
+.icon-check2:before {
+  content: "\f00c";
+}
+.icon-home2:before {
   content: "\f015";
 }
 .icon-image:before {
@@ -75,10 +273,10 @@ i {
 .icon-github-alt:before {
   content: "\f113";
 }
-.icon-wordpress:before {
+.icon-wordpress2:before {
   content: "\f19a";
 }
-.icon-joomla:before {
+.icon-joomla2:before {
   content: "\f1aa";
 }
 .icon-codepen:before {
