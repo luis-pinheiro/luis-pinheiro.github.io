@@ -8,6 +8,8 @@ $enable-hover-media-query: true !default;
 @import '../font/icons/style.scss';
 @import './now-ui/now-ui-kit.scss';
 @import './resume.scss'; // @import '../font/icons/styles.scss';
+@import './global';
+@import './navbar';
 
 .view,
 body,
@@ -86,47 +88,11 @@ body {
         }
     }
 }
-/* Navigation*/
-.navbar {
-    // box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
-
-    .navbar-rigth {
-        margin-left: auto;
-
-        li.nav-item {
-            text-align: center;
-        }
-    }
-}
-
-.scrolling-navbar {
-    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-}
-
-.top-nav-collapse {
-    background-color: #3c4f74;
-}
 
 footer.page-footer {
     background-color: #3c4f74;
     margin-top      : 2rem;
     padding-top     : 0 !important;
-}
-@media only screen and (max-width: 990px) {
-    .navbar {
-        // background-color: #1c2331;
-        background-color: #3c4f74;
-
-        .navbar-rigth {
-            background-color: #3c4f74;
-            margin-left     : auto;
-
-            li.nav-item {
-                text-align: center;
-            }
-        }
-    }
 }
 
 #about {
@@ -186,8 +152,4 @@ footer.page-footer {
             box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
         }
     }
-}
-/* Global*/
-.mx-auto {
-    display: block !important;
 }

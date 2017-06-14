@@ -1,0 +1,10 @@
+/* Global*/
+.mx-auto {
+    display: block !important;
+}
+
+a {
+    &:hover {
+        text-decoration: none !important;
+    }
+}
