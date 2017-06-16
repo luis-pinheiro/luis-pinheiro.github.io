@@ -44,12 +44,10 @@ body {
                 position         : absolute;
                 top              : 50%;
                 left             : 50%;
-                -ms-transform    : translate(-50%, -50%);
-                -webkit-transform: translate(-50%, -50%);
                 transform        : translate(-50%, -50%);
                 text-align       : center;
                 color            : #FFFFFF;
-                width            : 100%;
+                width            : 90%;
                 max-width        : 880px;
 
                 a {
@@ -147,8 +145,6 @@ footer.page-footer {
         transition: all 200ms ease-in-out-back;
 
         &:hover {
-            // opacity: 0.75;
-            // @extend .z-depth-2;
             box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
         }
     }
