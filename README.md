@@ -1,2 +1,2 @@
 # Portfolio
-FreeCodeCamp Project
+My personlijk portfolio.
