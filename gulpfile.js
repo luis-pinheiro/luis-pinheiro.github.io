@@ -10,15 +10,19 @@ var rucksack = require("gulp-rucksack");
 var htmlbeautify = require("gulp-html-beautify");
 var imagemin = require("gulp-imagemin");
 var runSequence = require("run-sequence");
+var gulpif = require("gulp-if");
+var del = require("del");
 
-gulp.task("img", function() {
+var dist = "./dist";
+
+gulp.task("img", function () {
   return gulp
     .src("./src/img/**.*")
     .pipe(imagemin())
     .pipe(gulp.dest("./dist/img"));
 });
 
-gulp.task("html", function() {
+gulp.task("html", function () {
   var options = {
     indent_size: 4
   };
@@ -29,7 +33,7 @@ gulp.task("html", function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task("sass", function() {
+gulp.task("sass", function () {
   return gulp
     .src("src/scss/style.scss")
     .pipe(sourcemaps.init())
@@ -49,9 +53,8 @@ gulp.task("sass", function() {
 });
 
 gulp.task(
-  "serve",
-  ["html", "js", "sass", "img", "copy-roboto", "copy-icomoon"],
-  function() {
+  "serve", ["html", "js", "sass", "img", "copy-roboto", "copy-icomoon"],
+  function () {
     browserSync.init({
       server: {
         baseDir: "."
@@ -63,22 +66,26 @@ gulp.task(
   }
 );
 
-gulp.task("js", function() {
+gulp.task("js", function () {
   return gulp.src("src/js/*.js").pipe(jsmin()).pipe(gulp.dest("dist/js"));
 });
 
-gulp.task("copy-roboto", function() {
+gulp.task("copy-roboto", function () {
   gulp
     .src("node_modules/mdbootstrap/font/roboto/*")
     .pipe(gulp.dest("dist/font/roboto"));
 });
 
-gulp.task("copy-icomoon", function() {
+gulp.task("copy-icomoon", function () {
   gulp.src("src/font/icons/fonts/*").pipe(gulp.dest("dist/css/fonts"));
 });
 
-gulp.task("del", require("del").bind(null, ["dist"]));
+// gulp.task("del", require("del").bind(null, ["dist"]));
 
-gulp.task("default", function() {
+gulp.task("del", function() {
+  return del("./dist");
+});
+
+gulp.task("default", function () {
   runSequence("del", "serve");
 });
