@@ -52,8 +52,7 @@ gulp.task("sass", function () {
     .pipe(browserSync.stream());
 });
 
-gulp.task(
-  "serve", ["html", "js", "sass", "img", "copy-roboto", "copy-icomoon"],
+gulp.task("serve", ["html", "js", "sass", "img", "copy-roboto", "copy-icomoon"],
   function () {
     browserSync.init({
       server: {
