@@ -4,10 +4,10 @@ $enable-gradients: true !default;
 $enable-hover-media-query: true !default;
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../../node_modules/mdbootstrap/sass/mdb.scss'; // @import '../../node_modules/t-scroll/sass/t-scroll.min.scss';
-@import './scrolling-nav.scss';
+@import './_scrolling-nav.scss';
 @import '../font/icons/style.scss';
 @import './now-ui/now-ui-kit.scss';
-@import './resume.scss'; // @import '../font/icons/styles.scss';
+@import './resume/_resume.scss'; // @import '../font/icons/styles.scss';
 @import './global';
 @import './navbar';
 

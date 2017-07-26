@@ -1,0 +1,15 @@
+#resume {
+    .experiences-section {
+        ul {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            padding-left: 40px; 
+            li {
+                list-style-type: disc !important;
+                p{
+                	margin-bottom: 0px !important;
+                }
+            }
+        }
+    }
+}
