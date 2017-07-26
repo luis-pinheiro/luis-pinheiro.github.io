@@ -1,15 +1,29 @@
 #resume {
     .experiences-section {
-        ul {
-            margin-top: 0;
-            margin-bottom: 1rem;
-            padding-left: 40px; 
-            li {
-                list-style-type: disc !important;
-                p{
-                	margin-bottom: 0px !important;
+        .item{
+                border-bottom: 1px solid rgba(158, 158, 158, 0.15);
+                ul {
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                    padding-left: 40px;
+                    li {
+                        list-style-type: disc !important;
+                        p {
+                            margin-bottom: 0px !important;
+                        }
+                    }
                 }
-            }
+                .tech {
+                    ul {
+                        li {
+                            float: left;
+                            list-style-type: none !important;
+                            margin: 5px;
+                            font-variant: petite-caps;
+                        }
+                    }
+                }
         }
+
     }
 }
