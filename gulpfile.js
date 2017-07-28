@@ -59,6 +59,7 @@ gulp.task("serve", ["html", "js", "sass", "img", "copy-roboto", "copy-icomoon"],
         baseDir: "."
       }
     });
+    gulp.watch(["./src/img/**/*.png", "./src/img/**/*.jpg"], ["img"]);
     gulp.watch("src/scss/**/*.scss", ["sass"]);
     gulp.watch("src/js/*.js", ["js"]).on("change", browserSync.reload);
     return gulp.watch("./*.html").on("change", browserSync.reload);

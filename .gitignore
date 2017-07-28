@@ -6,3 +6,5 @@
 *.old.html
 resume.txt
 ./resume-2.html
+./yarn.lock
+./assets
