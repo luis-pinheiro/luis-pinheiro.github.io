@@ -7,6 +7,8 @@ $enable-hover-media-query: true !default;
 @import './_scrolling-nav.scss';
 @import '../font/icons/style.scss';
 @import './now-ui/now-ui-kit.scss';
+@import './index/_global-index.scss';
+@import './index/_about.scss';
 @import './resume/_resume.scss'; // @import '../font/icons/styles.scss';
 @import './global';
 @import './navbar';
@@ -93,52 +95,6 @@ footer.page-footer {
     padding-top     : 0 !important;
 }
 
-#about {
-    ul {
-        li {
-            float     : left;
-            margin    : 7px;
-            list-style: none;
-        }
-    }
-
-    img {
-        width: 150px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    .progress {
-        display         : -ms-flexbox;
-        display         : flex;
-        font-size       : 12px;
-        font-size       : 0.75rem;
-        line-height     : 16px;
-        line-height     : 1rem;
-        text-align      : center;
-        background-color: rgba(2, 117, 216, 0.23);
-        border-radius   : 0.25rem;
-    }
-
-    hr {
-        box-sizing: content-box;
-        height    : 0;
-        margin-top: 16px;
-        margin-top: 1rem;
-        border    : 0;
-        border-top: 1px solid rgb(34, 42, 120);
-    }
-
-    .badge {
-        margin: 7px;
-    }
-
-    h5 {
-        margin: 15px;
-    }
-}
 
 #portfolio {
     img {
