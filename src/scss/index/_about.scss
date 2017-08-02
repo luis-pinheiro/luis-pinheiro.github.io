@@ -1,6 +1,12 @@
 section#about {
     background-color: #fff;
     padding-bottom: 30px;
+    .icons{
+        i{
+            font-size: 30px;
+            padding: 5px;
+        }
+    }
     ul {
         li {
             float: left;
