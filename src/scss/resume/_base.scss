@@ -2,7 +2,8 @@
 body {
     font-family            : 'Roboto', sans-serif;
     color                  : $text-color-secondary;
-    background             : $smoky-white;
+    // background             : $smoky-white;
+    background             : #e0e0e0;
     font-size              : 14px;
     padding                : 30px;
     -webkit-font-smoothing : antialiased;
@@ -41,7 +42,8 @@ p {
     max-width : 960px;
     margin    : 0 auto;
     position  : relative;
-    @include box-shadow(0px 2px 4px rgba(0,0,0,0.1));
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,.5);
+    // @include box-shadow(0px 2px 4px rgba(0,0,0,0.1));
 }
 
 .sidebar-wrapper {

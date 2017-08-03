@@ -78,10 +78,7 @@ gulp.task("copy-roboto", function () {
 
 gulp.task("copy-icomoon", function () {
   gulp.src("src/font/profitcreationsgithub/fonts/*").pipe(gulp.dest("dist/css/fonts"));
-  // gulp.src("src/font/icons/fonts/*").pipe(gulp.dest("dist/css/fonts"));
 });
-
-// gulp.task("del", require("del").bind(null, ["dist"]));
 
 gulp.task("del", function() {
   return del("./dist");
