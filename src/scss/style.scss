@@ -2,15 +2,16 @@ $enable-flex: true !default;
 $enable-shadows: true !default;
 $enable-gradients: true !default;
 $enable-hover-media-query: true !default;
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
-@import '../../node_modules/mdbootstrap/sass/mdb.scss'; 
-@import './_scrolling-nav.scss';
-@import '../font/icons/style.scss';
-@import './now-ui/now-ui-kit.scss';
-@import './resume/_resume.scss'; 
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/mdbootstrap/sass/mdb'; 
+@import './_scrolling-nav';
+// @import '../font/icons/style';
+@import './now-ui/now-ui-kit';
+@import './resume/_resume'; 
 @import './global';
-@import '../font/profitcreationsgithub/styles.scss';
+@import '../font/profitcreationsgithub/style.scss';
 @import './index/index';
-
+// @import '../../node_modules/materialize-css/sass/materialize';
+@import './materialize/materialize';
 
 
