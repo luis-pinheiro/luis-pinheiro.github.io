@@ -1,4 +1,5 @@
-section#about {
+#home{
+    section#about {
     background-color: #fff;
     padding-bottom: 30px;
     .icons{
@@ -7,11 +8,9 @@ section#about {
             padding: 5px;
         }
     }
-    ul {
+    ul.look {
         li {
-            float: left;
-            margin: 7px;
-            list-style: none;
+            list-style-type: disc;
         }
     }
     img {
@@ -46,3 +45,5 @@ section#about {
         margin: 15px;
     }
 }
+}
+

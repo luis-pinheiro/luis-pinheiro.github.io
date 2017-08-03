@@ -3,106 +3,14 @@ $enable-shadows: true !default;
 $enable-gradients: true !default;
 $enable-hover-media-query: true !default;
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
-@import '../../node_modules/mdbootstrap/sass/mdb.scss'; // @import '../../node_modules/t-scroll/sass/t-scroll.min.scss';
+@import '../../node_modules/mdbootstrap/sass/mdb.scss'; 
 @import './_scrolling-nav.scss';
 @import '../font/icons/style.scss';
 @import './now-ui/now-ui-kit.scss';
-@import './index/_global-index.scss';
-@import './index/_about.scss';
-@import './resume/_resume.scss'; // @import '../font/icons/styles.scss';
+@import './resume/_resume.scss'; 
 @import './global';
-@import './navbar';
 @import '../font/profitcreationsgithub/styles.scss';
-
-.view,
-body,
-html {
-    height: 100%;
-}
-
-body {
-    padding: 0 !important;
-}
-
-.section {
-    padding: 0 !important;
-}
-
-#header {
-    background-image   : url('../img/header-2.jpg');
-    background-position: center;
-    background-repeat  : no-repeat;
-    background-size    : cover;
-    height             : 100% !important;
-    min-height         : 100% !important;
-
-    .bck {
-        background-color: rgba(0, 0, 0, .2);
-        height          : 100%;
-
-        .container {
-            height: 100% !important;
-
-            .content-center {
-                position         : absolute;
-                top              : 50%;
-                left             : 50%;
-                transform        : translate(-50%, -50%);
-                text-align       : center;
-                color            : #FFFFFF;
-                width            : 90%;
-                max-width        : 880px;
-
-                a {
-                    font-size : responsive 16px 25px;
-                    font-range: 320px 1280px;
-                    transition: all 200ms ease-in-back;
-
-                    &:hover {
-                        transform: scale(1.5);
-                    }
-                }
-
-                h1 {
-                    font-size : responsive 22px 90px;
-                    font-range: 320px 1280px;
-                }
-
-                p {
-                    font-size : responsive 12px 22px;
-                    font-range: 320px 1280px;
-                }
-
-                a,
-                h1,
-                p {
-                    text-align : center;
-                    color      : #fff;
-                    display    : flow-root;
-                    text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
-                }
-
-                hr {
-                    border-top: 1px solid rgba(255, 255, 255, .7) !important;
-                }
-            }
-        }
-    }
-}
-
-footer.page-footer {
-    background-color: #3c4f74;
-    margin-top      : 2rem;
-    padding-top     : 0 !important;
-}
+@import './index/index';
 
 
-#portfolio {
-    img {
-        transition: all 200ms ease-in-out-back;
 
-        &:hover {
-            box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
-        }
-    }
-}

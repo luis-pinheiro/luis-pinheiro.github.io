@@ -1,0 +1,45 @@
+/* Navigation*/
+
+.navbar {
+    // box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+    // box-shadow: 5px 5px 5px 5px #000;
+    // box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 2px 3px rgba(0, 0, 0, .2);
+    .navbar-rigth {
+        margin-left: auto;
+        li.nav-item {
+            text-align: center;
+        }
+    }
+}
+
+.top-nav-collapse {
+    // background-color: #3c4f74;
+    background-color: $indigo;
+}
+
+@media only screen and (max-width: 990px) {
+    .navbar {
+        // background-color: #3c4f74;
+        background-color: $indigo;
+        .navbar-rigth {
+            background-color: $indigo;
+            margin-left: auto;
+            li.nav-item {
+                text-align: center;
+            }
+        }
+    }
+/*
+ * Sidebar
+*/
+    #navbarNav1,
+    .navbar-collapse {
+        background-color: $indigo !important;
+        box-shadow: 5px 5px 5px 5px #000;
+        &:before {
+            background-color: $indigo !important;
+            background: none !important;
+        }
+    }
+}
