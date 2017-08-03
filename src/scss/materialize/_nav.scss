@@ -1,7 +1,11 @@
-
-  i.icon-menu {
-    display: block;
-    font-size: 24px;
-    height: $navbar-height-mobile;
-    line-height: $navbar-line-height-mobile;
+#home {
+  .navbar-fixed {
+    z-index: 998;
+    i.icon-menu {
+      display: block;
+      font-size: 24px;
+      height: $navbar-height-mobile;
+      line-height: $navbar-line-height-mobile;
+    }
   }
+}

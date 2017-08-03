@@ -13,57 +13,27 @@
 
 <body id="home">
 
-<div class="navbar-fixed">
-   <nav class="indigo">
-    <div class="nav-wrapper container">
-      <a href="#!" class="brand-logo">Luis Pinheiro</a>
-      <!-- <i class="icon-menu"></i> -->
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="icon-menu"></i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
- 
-  <!-- <nav class="navbar navbar-toggleable-md navbar-dark fixed-top  scrolling-navbar ">
-    <div class="container">
-
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-bar bar1"></span>
-        <span class="navbar-toggler-bar bar2"></span>
-        <span class="navbar-toggler-bar bar3"></span>
-      </button>
-      <a class="navbar-brand" href="#">
-        <strong>Luis Pinheiro</strong>
-      </a>
-      <div class="collapse navbar-collapse" id="navbarNav1">
-        <ul class="navbar-nav navbar-rigth smooth-scroll">
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-success btn-sm" href="/resume.html" target="_blank">Resume</a>
-          </li>
+  <div class="navbar-fixed">
+    <nav class="indigo">
+      <div class="nav-wrapper container">
+        <a href="#!" class="brand-logo">Luis Pinheiro</a>
+        <!-- <i class="icon-menu"></i> -->
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="icon-menu"></i></a>
+        <ul class="right hide-on-med-and-down smooth-scroll">
+          <li><a class="page-scroll" href="#home">Home</a></li>
+          <li><a class="page-scroll" href="#about">About</a></li>
+          <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
+          <li><a class="page-scroll" href="/resume.html" target="_blank">Resume</a></li>
+        </ul>
+        <ul class="side-nav navbar-nav navbar-rigth smooth-scroll" id="mobile-demo">
+          <li><a class="page-scroll" href="#home">Home</a></li>
+          <li><a class="page-scroll" href="#about">About</a></li>
+          <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
+          <li><a class="page-scroll" href="/resume.html" target="_blank">Resume</a></li>
         </ul>
       </div>
-    </div>
-  </nav> -->
+    </nav>
+  </div>
 
   <div id="header">
     <div class="bck">
@@ -238,31 +208,58 @@
           <hr />
 
           <!-- Simon -->
-          <div data-wow-delay="0.1s" class="col-sm-4 wow fadeIn">
-            <a class="text-center" target="_blank" href="http://codepen.io/ProfitCreations/full/aWjMRa/">
-              <img src="./dist/img/Simon_Game.png" alt="Simon Game" class="img-fluid mx-auto" />
-              <p class="text-center">Simon Game</p>
-            </a>
+          <div data-wow-delay="0.1s" class="col-md-4 wow fadeIn">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator img-fluid mx-auto" src="./dist/img/Simon_Game.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Simon Game<i class="icon-more_vert right"></i></span>
+                <p><a target="_blank" href="http://codepen.io/ProfitCreations/full/aWjMRa/">Visite Project</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Simon Game<i class="icon-close right"></i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
           </div>
 
-          <!-- Calculator -->
-          <div data-wow-delay="0.2s" class="col-sm-4 wow fadeIn">
-            <a class="text-center" target="_blank" href="http://codepen.io/ProfitCreations/full/VbwmRZ/">
-              <img src="./dist/img/Calculator.png" alt="Calculator" class="img-fluid mx-auto" />
-              <p class="text-center">Javascript Calculator</p>
-            </a>
+           <!-- Calculator -->
+          <div data-wow-delay="0.1s" class="col-md-4 wow fadeIn">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator img-fluid mx-auto" src="./dist/img/Calculator.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Javascript Calculator<i class="icon-more_vert right"></i></span>
+                <p><a target="_blank" href="http://codepen.io/ProfitCreations/full/VbwmRZ/">Visite Project</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Javascript Calculator<i class="icon-close right"></i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
           </div>
 
-          <!-- Pomodoro -->
-          <div data-wow-delay="0.4s" class="col-sm-4 wow fadeIn">
-            <a class="text-center" target="_blank" href="http://codepen.io/ProfitCreations/full/YVWYOm/">
-              <img src="./dist/img/Pomodoro.png" alt="Pomodoro Clock" class="img-fluid mx-auto" />
-              <p class="text-center">Pomodoro Clock</p>
-            </a>
+           <!-- Pomodoro -->
+          <div data-wow-delay="0.1s" class="col-md-4 wow fadeIn">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator img-fluid mx-auto" src="./dist/img/Pomodoro.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Pomodoro Clock<i class="icon-more_vert right"></i></span>
+                <p><a target="_blank" href="http://codepen.io/ProfitCreations/full/VbwmRZ/">Visite Project</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Pomodoro Clock<i class="icon-close right"></i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
           </div>
 
           <!-- TicTacToe -->
-          <div data-wow-delay="0.6s" class="col-sm-4 wow fadeIn">
+          <div data-wow-delay="0.6s" class="col-md-4 wow fadeIn">
             <a class="text-center" target="_blank" href="http://codepen.io/ProfitCreations/full/vmXVxE/">
               <img src="./dist/img/TicTacToe.png" alt="TicTacToe Game" class="img-fluid mx-auto" />
               <p class="text-center">TicTacToe Game</p>
@@ -270,7 +267,7 @@
           </div>
 
           <!-- Twitchtv -->
-          <div data-wow-delay="0.8s" class="col-sm-4 wow fadeIn">
+          <div data-wow-delay="0.8s" class="col-md-4 wow fadeIn">
             <a class="text-center" target="_blank" href="http://codepen.io/ProfitCreations/full/apaJyd/">
               <img src="./dist/img/twitchtv.png" alt="Twitchtv" class="img-fluid mx-auto" />
               <p class="text-center">Twitchtv</p>
@@ -278,7 +275,7 @@
           </div>
 
           <!-- Random Quotes -->
-          <div data-wow-delay="1s" class="col-sm-4 wow fadeIn">
+          <div data-wow-delay="1s" class="col-md-4 wow fadeIn">
             <a class="text-center" target="_blank" href="http://codepen.io/ProfitCreations/full/dNdmJd/">
               <img src="./dist/img/quotes.png" alt="Random Quotes" class="img-fluid mx-auto" />
               <p class="text-center">Random Quotes</p>
@@ -286,7 +283,7 @@
           </div>
 
           <!-- Latuta -->
-          <div data-wow-delay="1.2s" class="col-sm-4 wow fadeIn">
+          <div data-wow-delay="1.2s" class="col-md-4 wow fadeIn">
             <a class="text-center" target="_blank" href="#">
               <img src="./dist/img/latuta.png" alt="Latuta" class="img-fluid mx-auto" />
               <p class="text-center">Latuta</p>
@@ -294,7 +291,7 @@
           </div>
 
           <!-- nc-customs -->
-          <div data-wow-delay="1.4s" class="col-sm-4 wow fadeIn">
+          <div data-wow-delay="1.4s" class="col-md-4 wow fadeIn">
             <a class="text-center" target="_blank" href="#">
               <img src="./dist/img/nc-customs.png" alt="Nc-customs" class="img-fluid mx-auto" />
               <p class="text-center">Nc-customs</p>
@@ -302,7 +299,7 @@
           </div>
 
           <!-- profit -->
-          <div data-wow-delay="1.6s" class="col-sm-4 wow fadeIn">
+          <div data-wow-delay="1.6s" class="col-md-4 wow fadeIn">
             <a class="text-center" target="_blank" href="#">
               <img src="./dist/img/profit.png" alt="ProfitCreations" class="img-fluid mx-auto" />
               <p class="text-center">ProfitCreations</p>
@@ -310,7 +307,7 @@
           </div>
 
           <!-- trendytv -->
-          <div data-wow-delay="1.8s" class="col-sm-4 wow fadeIn">
+          <div data-wow-delay="1.8s" class="col-md-4 wow fadeIn">
             <a class="text-center" target="_blank" href="#">
               <img src="./dist/img/trendytv.jpg" alt="TrendyTV" class="img-fluid mx-auto" />
               <p class="text-center">TrendyTV</p>
@@ -318,7 +315,7 @@
           </div>
 
           <!-- vastgoedjunior -->
-          <div data-wow-delay="2s" class="col-sm-4 wow fadeIn">
+          <div data-wow-delay="2s" class="col-md-4 wow fadeIn">
             <a class="text-center" target="_blank" href="#">
               <img src="./dist/img/vastgoedjunior.png" alt="Vastgoedjunior" class="img-fluid mx-auto" />
               <p class="text-center">Vastgoedjunior</p>
@@ -326,7 +323,7 @@
           </div>
 
           <!-- teetopup -->
-          <div data-wow-delay="2s" class="col-sm-4 wow fadeIn">
+          <div data-wow-delay="2s" class="col-md-4 wow fadeIn">
             <a class="text-center" target="_blank" href="./projects/test.html">
               <img src="./dist/img/teetopup.png" alt="TeeTopUp" class="img-fluid mx-auto" />
               <p class="text-center">TeeTopUp</p>
