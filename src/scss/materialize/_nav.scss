@@ -7,5 +7,14 @@
       height: $navbar-height-mobile;
       line-height: $navbar-line-height-mobile;
     }
+    ul {
+      li {
+        a {
+          &:hover {
+            color: #fff !important;
+          }
+        }
+      }
+    }
   }
 }
