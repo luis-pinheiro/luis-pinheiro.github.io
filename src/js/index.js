@@ -32,6 +32,18 @@ $(document).ready(function() {
         't_delay': 3,
         't_function': 'ease-in'
     })
+    Tu.t_scroll({
+        't_element': '.btns .slideRight',
+        't_duration': 1,
+        't_delay': 2,
+        't_function': 'ease-in'
+    })
+    Tu.t_scroll({
+        't_element': '.btns .slideLeft',
+        't_duration': 1,
+        't_delay': 2,
+        't_function': 'ease-in'
+    })
 
     /*
   linear

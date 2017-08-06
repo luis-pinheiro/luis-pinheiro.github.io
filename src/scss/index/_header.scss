@@ -24,13 +24,15 @@
           width: 90%;
           max-width: 880px;
 
-          a {
-            font-size: responsive 16px 25px;
-            font-range: 320px 1280px;
-            transition: all 200ms ease-in-back;
+          .social {
+            a {
+              font-size: responsive 16px 25px;
+              font-range: 320px 1280px;
+              transition: all 200ms ease-in-back;
 
-            &:hover {
-              transform: scale(1.5);
+              &:hover {
+                transform: scale(.2);
+              }
             }
           }
 
@@ -55,6 +57,12 @@
 
           hr {
             border-top: 1px solid rgba(255, 255, 255, .7) !important;
+          }
+
+          .btns {
+            a {
+              @extends: button;
+            }
           }
         }
       }
