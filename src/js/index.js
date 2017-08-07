@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    $('.button-collapse').sideNav({
+        closeOnClick: true
+    });
   $('.nav-link').click(function() {
     $('#navbarNav1').removeClass('show');
   });

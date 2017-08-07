@@ -42,6 +42,8 @@
 @import "../../../node_modules/materialize-css/sass/components/date_picker/default.date";
 @import "../../../node_modules/materialize-css/sass/components/date_picker/default.time";
 
-
+@import './global';
 @import './nav';
+@import './header';
+@import './about';
 @import './portfolio';

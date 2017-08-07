@@ -16,9 +16,9 @@
 
         .content-center {
           position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          // top: 50%;
+          // left: 50%;
+          // transform: translate(-50%, -50%);
           text-align: center;
           color: #FFFFFF;
           width: 90%;
@@ -28,10 +28,10 @@
             a {
               font-size: responsive 16px 25px;
               font-range: 320px 1280px;
-              transition: all 200ms ease-in-back;
+              transition: all 50ms ease-in-back;
 
               &:hover {
-                transform: scale(.2);
+                transform: scale(1.1);
               }
             }
           }
@@ -57,12 +57,6 @@
 
           hr {
             border-top: 1px solid rgba(255, 255, 255, .7) !important;
-          }
-
-          .btns {
-            a {
-              @extends: button;
-            }
           }
         }
       }

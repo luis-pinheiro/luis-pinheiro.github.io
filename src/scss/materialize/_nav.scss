@@ -7,11 +7,25 @@
       height: $navbar-height-mobile;
       line-height: $navbar-line-height-mobile;
     }
-    ul {
+    .button-collapse{
+      &:hover{
+        color: #fff;
+      }
+    }
+    ul.right {
       li {
         a {
           &:hover {
             color: #fff !important;
+          }
+        }
+      }
+    }
+    ul.side-nav{
+      li{
+        a{
+          &:hover{
+            color: #000 !important;
           }
         }
       }
