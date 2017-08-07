@@ -5,4 +5,4 @@ Tu.t_scroll({'t_element':'.lead .slideLeft','t_duration':1,'t_delay':2,'t_functi
 Tu.t_scroll({'t_element':'.social .bounceIn','t_duration':0.2,'t_delay':3,'t_function':'ease-in'})
 Tu.t_scroll({'t_element':'.btns .slideRight','t_duration':1,'t_delay':2,'t_function':'ease-in'})
 Tu.t_scroll({'t_element':'.btns .slideLeft','t_duration':1,'t_delay':2,'t_function':'ease-in'})
-new WOW().init();});
+new WOW().init();$(".button-collapse").sideNav();});

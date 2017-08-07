@@ -122,12 +122,12 @@ nowuiKit = {
     if ($(document).scrollTop() > scroll_distance) {
       if (transparent) {
         transparent = false;
-        $(".navbar[color-on-scroll]").removeClass("navbar-transparent");
+        $("nav").removeClass("navbar-transparent");
       }
     } else {
       if (!transparent) {
         transparent = true;
-        $(".navbar[color-on-scroll]").addClass("navbar-transparent");
+        $("nav").addClass("navbar-transparent");
       }
     }
   }, 17),

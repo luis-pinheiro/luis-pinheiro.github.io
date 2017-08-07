@@ -60,4 +60,5 @@ $(document).ready(function() {
   inherit
     */
     new WOW().init();
+    $(".button-collapse").sideNav();
 });
