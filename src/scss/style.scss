@@ -5,13 +5,11 @@ $enable-hover-media-query: true !default;
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import '../../node_modules/mdbootstrap/sass/mdb'; 
 @import './_scrolling-nav';
-// @import '../font/icons/style';
 @import './now-ui/now-ui-kit';
 @import './resume/_resume'; 
 @import './global';
 @import '../font/profitcreationsgithub/style.scss';
 @import './index/index';
-// @import '../../node_modules/materialize-css/sass/materialize';
 @import './materialize/materialize';
 
 

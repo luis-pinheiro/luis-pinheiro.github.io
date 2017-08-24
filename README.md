@@ -1,2 +1,7 @@
-# Portfolio
-My personlijk portfolio.
+# ProfitCreations Portfolio
+
+Run 'npm install' of 'yarn'
+
+Then 'gulp'
+
+
