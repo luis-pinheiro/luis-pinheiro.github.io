@@ -41,14 +41,13 @@ p {
     background: $theme-color;
     max-width : 960px;
     margin    : 0 auto;
-    position  : relative;
+    // position  : relative;
     box-shadow: 0px 1px 2px 1px rgba(0,0,0,.5);
-    // @include box-shadow(0px 2px 4px rgba(0,0,0,0.1));
 }
 
 .sidebar-wrapper {
     background: $theme-color;
-    position  : absolute;
+    // position  : absolute;
     right     : 0;
     width     : 240px;
     height    : 100%;
@@ -182,7 +181,7 @@ p {
 
 .main-wrapper {
     background: #fff;
-    padding   : 60px 300px 60px 60px;
+    // padding   : 60px 300px 60px 60px;
 
     .section-title {
         text-transform: uppercase;
@@ -202,7 +201,7 @@ p {
             @include border-radius(50%);
             background  : darken($theme-color, 15%);
             text-align  : center;
-            padding : 4px;
+            padding     : 4px;
             font-size   : 16px;
             position    : relative;
             top         : -2px;

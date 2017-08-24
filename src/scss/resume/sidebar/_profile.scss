@@ -1,11 +1,13 @@
 .sidebar-wrapper {
     background: $theme-color;
-    position  : absolute;
+    // position  : absolute;
     right     : 0;
-    width     : 240px;
+    width     : 100% !important;
     height    : 100%;
-    min-height: 800px;
+    min-height: 100%;
     color     : #fff;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 
     a {
         color: #fff;
