@@ -17,7 +17,7 @@ var dist = "./dist";
 
 gulp.task("img", function () {
   return gulp
-    .src("./src/img/**.*")
+    .src("./src/img/*")
     .pipe(imagemin())
     .pipe(gulp.dest("./dist/img"));
 });
@@ -35,7 +35,7 @@ gulp.task("html", function () {
 
 gulp.task("sass", function () {
   return gulp
-    .src("src/scss/style.scss")
+    .src("src/scss/*.scss")
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(cssmin())

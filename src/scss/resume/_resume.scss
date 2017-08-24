@@ -1,8 +1,15 @@
+$enable-rounded:            true !default;
+$enable-shadows:            true !default;
+$enable-gradients:          true !default;
+$enable-transitions:        true !default;
+$enable-hover-media-query:  true !default;
+$enable-grid-classes:       true !default;
+$enable-print-styles:       true !default;
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "wrapper/_experiences.scss";
 @import "./_theme-default.scss";
 @import "_mixins.scss";
 @import "_retina.scss";
 @import "_base.scss";
 @import "_responsive.scss";
 @import "sidebar/_profile.scss";
-@import "wrapper/_experiences.scss";

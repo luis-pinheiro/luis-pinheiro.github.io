@@ -1,5 +1,6 @@
 /* ======= Base ======= */
-body {
+
+    body {
     font-family            : 'Roboto', sans-serif;
     color                  : $text-color-secondary;
     // background             : $smoky-white;
@@ -8,6 +9,7 @@ body {
     padding                : 30px;
     -webkit-font-smoothing : antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-image: url('../img/paper.png');
 }
 
 h1,
@@ -41,13 +43,11 @@ p {
     background: $theme-color;
     max-width : 960px;
     margin    : 0 auto;
-    // position  : relative;
     box-shadow: 0px 1px 2px 1px rgba(0,0,0,.5);
 }
 
 .sidebar-wrapper {
     background: $theme-color;
-    // position  : absolute;
     right     : 0;
     width     : 240px;
     height    : 100%;
@@ -60,7 +60,6 @@ p {
 
     .profile-container {
         padding   : 30px;
-        //background: darken($theme-color, 10%);
         background: rgba(0, 0, 0, 0.2);
         text-align: center;
         color     : #fff;
@@ -181,7 +180,7 @@ p {
 
 .main-wrapper {
     background: #fff;
-    // padding   : 60px 300px 60px 60px;
+    padding: 30px;
 
     .section-title {
         text-transform: uppercase;
@@ -201,7 +200,7 @@ p {
             @include border-radius(50%);
             background  : darken($theme-color, 15%);
             text-align  : center;
-            padding     : 4px;
+            padding     : 7px;
             font-size   : 16px;
             position    : relative;
             top         : -2px;
@@ -210,12 +209,6 @@ p {
 
     .section {
         margin-bottom: 60px;
-    }
-
-    .experiences-section {
-        .item {
-            margin-bottom: 30px;
-        }
     }
 
     .upper-row {
@@ -233,9 +226,7 @@ p {
     }
 
     .time {
-        position: absolute;
-        right   : 0;
-        top     : 0;
+       float: right;
         color   : $text-grey;
     }
 
@@ -298,3 +289,4 @@ p {
         color: $heart;
     }
 }
+

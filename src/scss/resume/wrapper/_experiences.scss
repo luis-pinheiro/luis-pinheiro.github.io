@@ -2,10 +2,12 @@
     .experiences-section {
         .item{
                 border-bottom: 1px solid rgba(158, 158, 158, 0.15);
+                margin-bottom: 30px;
+                padding-bottom: 15px;
                 ul {
                     margin-top: 0;
                     margin-bottom: 1rem;
-                    padding-left: 40px;
+                    padding-left: 20px;
                     li {
                         list-style-type: disc !important;
                         p {
@@ -16,10 +18,10 @@
                 .tech {
                     ul {
                         li {
-                            float: left;
+                            float: left !important;
                             list-style-type: none !important;
-                            margin: 5px;
-                            font-variant: petite-caps;
+                            margin-left: 5px !important;
+                            font-variant: petite-caps !important;
                         }
                     }
                 }
